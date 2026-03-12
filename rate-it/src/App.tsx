@@ -4,6 +4,8 @@ import ProviderDetailPage from './pages/ProviderDetailPage'
 import AddProviderPage from './pages/AddProviderPage'
 import AdminLoginPage from './pages/admin/AdminLoginPage'
 import AdminDashboardPage from './pages/admin/AdminDashboardPage'
+import ReviewModerationPage from './pages/admin/ReviewModerationPage'
+import ProviderModerationPage from './pages/admin/ProviderModerationPage'
 import ProtectedRoute from './components/ProtectedRoute'
 
 function NotFound() {
@@ -34,14 +36,15 @@ export default function App() {
         <Route path="/admin/login" element={<AdminLoginPage />} />
 
         {/* Protected admin routes */}
-        <Route
-          path="/admin/dashboard"
-          element={
-            <ProtectedRoute>
-              <AdminDashboardPage />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/admin/dashboard" element={
+          <ProtectedRoute><AdminDashboardPage /></ProtectedRoute>
+        } />
+        <Route path="/admin/reviews" element={
+          <ProtectedRoute><ReviewModerationPage /></ProtectedRoute>
+        } />
+        <Route path="/admin/providers" element={
+          <ProtectedRoute><ProviderModerationPage /></ProtectedRoute>
+        } />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
