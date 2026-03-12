@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
 import SearchBar from '../components/SearchBar'
 import CategoryGrid from '../components/CategoryGrid'
-import ProviderCard, { Provider } from '../components/ProviderCard'
+import ProviderCard, { type Provider } from '../components/ProviderCard'
 import { useNavigate } from 'react-router-dom'
 
 export default function HomePage() {

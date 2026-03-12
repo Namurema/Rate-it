@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import ProviderDetailPage from './pages/ProviderDetailPage'
 import AdminPage from './pages/AdminPage'
+import AddProviderPage from './pages/AddProviderPage'
 
 function NotFound() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/provider/:id" element={<ProviderDetailPage />} />
         <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/add-provider" element={<AddProviderPage />} />
       </Routes>
     </BrowserRouter>
   )
