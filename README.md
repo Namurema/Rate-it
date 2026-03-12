@@ -52,6 +52,4 @@ npm run dev
 
 The app is deployed on Vercel. 
 
-## Admin Access
-
-Create an admin user manually in Supabase under Authentication > Users. Visit `/admin` to log in.
+https://rate-it-czbm.vercel.app/
