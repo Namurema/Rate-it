@@ -50,4 +50,4 @@ npm run dev
 
 ## Deployment
 
-The app is deployed on Vercel.
+The app is deployed on Vercel. https://rate-it-czbm.vercel.app/
